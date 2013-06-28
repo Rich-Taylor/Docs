@@ -35,7 +35,5 @@ h = doc.word_frequency
 
 sorted_keys = h.keys.sort
 
-sorted_keys.each do |k|
-  printf "%15s %d\n", k, h[k]
-end
+sorted_keys.each { |k| printf "%15s %d\n", k, h[k] }
 
